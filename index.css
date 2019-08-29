@@ -1,0 +1,177 @@
+/**** styling for all pages ****/
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h2, h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+p, li, button, a, table, input{
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    color: #e1315b;
+    font-size: 2.5em;
+    margin: 15px;
+}
+
+input{
+    font-size: 1.5em;
+}
+
+button{
+    background-color: #f47d4a;
+    border: none;
+    font-size: 2em;
+    width: 70%;
+    cursor: pointer;
+    margin: 10px 0px;
+    box-shadow: 0.3px 0.3px 0.3px 0.3px grey;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+    background-color: #f96d32;
+}
+
+/**** header and footer styles ****/
+header, footer{
+    background-color: #008dcb; 
+    color: white;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 90px;
+    padding: 10px 0px 10px 10px;
+    opacity: 0.96;
+    box-shadow: 0.3px 0.3px 0.3px 0.3px grey;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    padding: 7px;
+    width: 100%;
+}
+
+footer a{
+    color: white;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    padding: 15px 0px 0px 20px;
+}
+
+footer a:hover{
+    color: lightgrey;
+}
+
+/**** styling for intro page ****/
+.intro__text p{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 2em;
+    padding: 40px 30px 10px 30px;
+}
+
+.two__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description__text{
+    text-align: center;
+}
+
+.description__text p, .description__text ul{
+    font-size: 1.5em;
+    margin: 10px;
+    color: #333333e6;
+}
+
+.description__text ul{
+    list-style: none;
+}
+
+/**** styling for issues listing page ****/
+.issue__list{
+    padding: 140px 0px 0px 10px;
+}
+
+.header__issues{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.search__text {
+    padding: 10px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+.search__button {
+    float: left;
+    width: 20%;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    background: #f96d32;
+    border-left: none; 
+    cursor: pointer;
+  }
+
+table {
+    border-collapse: collapse;
+    border-top: 1px solid black;
+    margin-top: 15px;
+}
+
+tr{
+    border-bottom: 1px solid #eff0f2;
+}
+
+td{ 
+    padding: 15px;
+}
+
+@media only screen and (min-width: 800px){
+    .header__issues{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .intro__text{
+        width: 70%;
+        margin: auto;
+    }
+
+    .two__buttons{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    button{
+        width: 300px;
+    }
+}
