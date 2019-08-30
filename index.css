@@ -2,69 +2,56 @@
 *{
     box-sizing: border-box;
     margin: 0;
-}
-
-h2, h3{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-}
-
-p, li, button, a, table, input{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 h2{
     font-size: 3em;
+    color: #44d9e6;
+    font-weight: 700;
+    line-height: 1em;
 }
 
 h3{
-    color: #e1315b;
+    color: #4488E6;
     font-size: 2.5em;
     margin: 15px;
 }
 
+main{
+    padding: 20px;
+}
+
+/*** forms and inputs ***/
 input{
     font-size: 1.5em;
 }
 
 button{
-    background-color: #f47d4a;
+    background-color: #44E6A2;
     border: none;
-    font-size: 2em;
-    width: 70%;
+    color: #333333cf;
+    font-size: 1.4em;
     cursor: pointer;
-    margin: 10px 0px;
-    box-shadow: 0.3px 0.3px 0.3px 0.3px grey;
+    margin: 6px 0px;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 6px;
 }
 
 button:hover{
     transform: scale(1.05);
     transition: all .2s ease-in-out;
-    background-color: #f96d32;
-}
-
-/**** header and footer styles ****/
-header, footer{
-    background-color: #008dcb; 
-    color: white;
-}
-
-header a{
-    color: white;
-    text-decoration: none;
+    background-color: #19be79;
 }
 
 header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-height: 90px;
-    padding: 10px 0px 10px 10px;
-    opacity: 0.96;
-    box-shadow: 0.3px 0.3px 0.3px 0.3px grey;
+    text-align: center;
 }
 
+/**** footer styles ****/
 footer{
+    background-color: #44d9e6; 
     position: fixed;
     bottom: 0px;
     padding: 7px;
@@ -72,22 +59,32 @@ footer{
 }
 
 footer a{
-    color: white;
+    color: #333333;
     transition: all .2s ease-in-out;
     text-decoration: none;
     padding: 15px 0px 0px 20px;
 }
 
 footer a:hover{
-    color: lightgrey;
+    color: #000000;
+    text-decoration: underline;
 }
 
 /**** styling for intro page ****/
+.homepage{
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 80px;
+    padding-top: 100px;
+}
+
 .intro__text p{
-    margin-top: 90px;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 40px 30px 10px 30px;
+    font-weight: 300;
+    color: #333333;
 }
 
 .two__buttons{
@@ -111,10 +108,6 @@ footer a:hover{
 }
 
 /**** styling for issues listing page ****/
-.issue__list{
-    padding: 140px 0px 0px 10px;
-}
-
 .header__issues{
     display: flex;
     flex-direction: column;
@@ -135,8 +128,8 @@ footer a:hover{
     float: left;
     width: 20%;
     margin-top: 0px;
-    padding-bottom: 10px;
-    background: #f96d32;
+    padding: 10px 0px 14px 0px;
+    background: #44E6A2;
     border-left: none; 
     cursor: pointer;
   }
@@ -156,12 +149,24 @@ td{
 }
 
 @media only screen and (min-width: 800px){
+    .homepage{
+        padding-top: 150px;
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1000px){
     .header__issues{
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .intro__text{
+    .homepage{
+        padding-top: 180px;
+        width: 60%;
+    }
+
+    .issue__list{
         width: 70%;
         margin: auto;
     }
