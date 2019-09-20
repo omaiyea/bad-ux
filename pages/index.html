@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>I am having a bad user experience.</title>
+        <meta charset = "UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>
+        <main class="homepage">
+            <header>
+                <a href="./explore.html"><h2>I Am Having A Bad User Experience.</h2></a>
+            </header>
+            <section class="intro__text">
+                <p>File all the issues, bugs, or hard-to-navigate workflows you run into, on any website. See what issues your product has and get feedback from real users.</p>
+                <div class="two__buttons">
+                    <form id="login-button">
+                        <button>Login / Sign Up</button>
+                    </form>
+                    <form action="explore.html">
+                        <button>Explore Issues</button>
+                    </form>
+                </div>
+            </section>
+            <section class="login-popup">
+                <form id="login-form" class="hidden"> <!-- may need to do something besides hidden to match jquery -->
+                    <fieldset class="close">x</fieldset>
+                    <label><p>Email Address:</p>
+                        <input name="email" type="text" placeholder="hello@email.com" required>
+                    </label>
+                    <label><p>Password:</p>
+                        <input name="password" type="password" required>
+                    </label>
+                    <input type="submit" value="Login">
+                    <input type="submit" value="Sign Up">
+                </form>
+            </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+    <footer>
+        <a href="./privacyTerms.html">Privacy Policy</a>
+        <a href="./privacyTerms.html">Terms of Service</a>
+    </footer>
+</html>

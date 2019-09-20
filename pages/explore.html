@@ -4,7 +4,7 @@
         <title>I am having a bad user experience.</title>
         <meta charset = "UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="../css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,11 +12,11 @@
     <body>
         <main class="issues">
             <header>
-                <h2>I Am Having A Bad User Experience.</h2>
+                <a href="./explore.html"><h2>I Am Having A Bad User Experience.</h2></a>
             </header>
             <section class="issue__list">
                 <div class="header__issues">
-                    <button>Add Issue</button>
+                    <button id="add-issue">Add Issue</button>
                     <form class="search__box">
                         <input type="text" class="search__text" placeholder="Search/Filter" name="search">
                         <button type="submit" class="search__button"><i class="fa fa-search"></i></button>
@@ -44,10 +44,35 @@
                     </tr>
                 </table>
             </section>
+            <section class="issue-popup">
+                <form id="issue-form" class="hidden"> <!-- may need to do something besides hidden to match jquery -->
+                    <fieldset class="close">x</fieldset>
+                    <label><p>Website or App Name:</p>
+                        <input name="site" type="text" placeholder="Meetup" required>
+                    </label>
+                    <label><p>Environment:</p>
+                        <input name="env" type="text" placeholder="Mobile App" required>
+                    </label>
+                    <label><p>Device:</p>
+                        <input name="device" type="text" placeholder="iPhone" required>
+                    </label>
+                    <label><p>Issue Summary:</p>
+                        <input name="email" type="text" placeholder="Profile picture upload isn't working on mobile" required>
+                    </label>
+                    <label><p>Repro Steps:</p>
+                        <textarea name="repro" required>Go to Profile > Upload .... </textarea>
+                    </label>
+                    <input type="button" value="Add screenshots" class="form-button">
+                    <input type="submit" value="Create">
+                    <input type="submit" value="Cancel" class="cancel-button">
+                </form>
+            </section>
         </main>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../js/index.js"></script>
     </body>
     <footer>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+        <a href="./privacyTerms.html">Privacy Policy</a>
+        <a href="./privacyTerms.html">Terms of Service</a>
     </footer>
 </html>
