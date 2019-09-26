@@ -14,6 +14,7 @@
             <header>
                 <a href="./explore.html"><h2>I Am Having A Bad User Experience.</h2></a>
             </header>
+        
             <ul class="nav__bar">
                 <div class="left">
                     <li><a href="explore.html">All Issues</a></li>
@@ -28,21 +29,20 @@
         </nav>
         <main>
             <section class="issue__list">
-                <header><h3>All Issues</h3></header>
+                <header><h3>My Issues</h3></header>
                 <div class="header__issues">
-                    <button id="add-issue">Add Issue</button>
+                    <button id="create-dashboard">Create Dashboard</button>
                   <!--  <form class="search__box">
                         <input type="text" class="search__text" placeholder="Search/Filter" name="search">
                         <button type="submit" class="search__button"><i class="fa fa-search"></i></button>
                     </form>-->
                 </div>
          <!--     <p class="filter__message">Showing: All Issues</p>-->  
-                <ul class="issue__nav">
-                    <li>All Sites</li>
-                    <li>Meetup</li>
-                    <li>Facebook</li>
-                    <li>Ecosia</li>
-                </ul>
+                <label>Dashboard: <select>
+                    <option value="mine">My issues</option>
+                    <option value="Facebook">Facebook issues</option>
+                    <option value="new">New issues</option>
+                </select></label>
                 <table>
                     <th>
                         <td>Votes</td>
